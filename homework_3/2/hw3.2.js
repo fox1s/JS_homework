@@ -514,19 +514,19 @@
 // Частковий приклад реультату:
 //     let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
 
-let usersWithId = [
-    {id: 1, name: 'vasya', age: 31, status: false},
-    {id: 2, name: 'petya', age: 30, status: true},
-    {id: 3, name: 'kolya', age: 29, status: true},
-    {id: 4, name: 'olya', age: 28, status: false},
-];
-
-let citiesWithId = [
-    {user_id: 3, country: 'USA', city: 'Portland'},
-    {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-    {user_id: 2, country: 'Poland', city: 'Krakow'},
-    {user_id: 4, country: 'USA', city: 'Miami'},
-];
+// let usersWithId = [
+//     {id: 1, name: 'vasya', age: 31, status: false},
+//     {id: 2, name: 'petya', age: 30, status: true},
+//     {id: 3, name: 'kolya', age: 29, status: true},
+//     {id: 4, name: 'olya', age: 28, status: false},
+// ];
+//
+// let citiesWithId = [
+//     {user_id: 3, country: 'USA', city: 'Portland'},
+//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//     {user_id: 2, country: 'Poland', city: 'Krakow'},
+//     {user_id: 4, country: 'USA', city: 'Miami'},
+// ];
 
 // let usersWithCities = JSON.parse(JSON.stringify(usersWithId));
 // for (const elemUser of usersWithCities) {
@@ -540,19 +540,145 @@ let citiesWithId = [
 
 // ..............................................
 // - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
-// document.createElement('div')
+let byId = document.getElementById('homework');
+let byClass = document.getElementsByClassName('HOMEWORK');
+let byTag = document.getElementsByTagName('div');
 
-
-
-
-// - змінити цей текст використовуючи селектори id, class,  tag
-// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
-// - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
-// - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
-// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
-// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
+// console.log(byId.innerText);
+// for (const elem of byClass) {
+//     console.log(elem.innerText);
+// }
 //
+// for (const elem of byTag) {
+//     console.log(elem.innerText);
+// }
+
+
+/////////////////////////////////////////////////////////////////////////////////
+// - змінити цей текст використовуючи селектори id, class,  tag
+// byId.innerText = 'ferfioegoiege';
+
+// byTag.innerText = 'bbbbbbbbbbbbb';
+// for (const elem of byClass) {
+//     elem.innerText = 'aaaaaaaaaaaaaa';
+// }
+//
+// for (const elem of byTag) {
+//     elem.innerText = 'bbbbbbbbbbbbb';
+// }
+
+/////////////////////////////////////////////////////////////////////////////////
+// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+
+// byId.style.width = '50px'
+// byId.style.height = '50px'
+//
+// for (const elem of byClass) {
+//     elem.style.width = '50px'
+//     elem.style.height = '50px'
+// }
+//
+// for (const elem of byTag) {
+//     elem.style.width = '50px'
+//     elem.style.height = '50px'
+// }
+/////////////////////////////////////////////////////////////////////////////////
+
+// - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+
+// let table = document.createElement('table');
+// table.style.border='2px solid black'
+//
+// let tr = document.createElement('tr');
+// for (let i = 0; i < 3; i++) {
+//     let th = document.createElement('th');
+//     th.style.border='1px solid black'
+//     th.innerText = `Ячейка ${i+1}`;
+//     tr.appendChild(th);
+// }
+// table.appendChild(tr);
+// document.body.appendChild(table);
+/////////////////////////////////////////////////////////////////////////////////
+
+// - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+
+// let table = document.createElement('table');
+// table.style.border='2px solid black'
+// for (let i = 0; i < 10; i++) {
+//     let tr = document.createElement('tr');
+//     for (let j = 0; j < 3; j++) {
+//         let th = document.createElement('th');
+//         th.style.border='1px solid black'
+//         th.innerText = `Рядок ${i+1}`;
+//         tr.appendChild(th);
+//     }
+//     table.appendChild(tr);
+// }
+//
+// document.body.appendChild(table);
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+
+// let table = document.createElement('table');
+// table.style.border='2px solid black'
+// for (let i = 0; i < 10; i++) {
+//     let tr = document.createElement('tr');
+//     for (let j = 0; j < 5; j++) {
+//         let th = document.createElement('th');
+//         th.style.border='1px solid black'
+//         th.innerText = `Рядок ${i+1}`;
+//         tr.appendChild(th);
+//     }
+//     table.appendChild(tr);
+// }
+
+// document.body.appendChild(table);
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt\
+// let table = document.createElement('table');
+// table.style.border='2px solid black'
+// let cell = prompt('Namber of cell?');
+// let line = prompt('Namber of line?');
+// for (let i = 0; i < line; i++) {
+//     let tr = document.createElement('tr');
+//     for (let j = 0; j < cell; j++) {
+//         let th = document.createElement('th');
+//         th.style.border='1px solid black'
+//         th.innerText = `Рядок ${i+1}`;
+//         tr.appendChild(th);
+//     }
+//     table.appendChild(tr);
+// }
+//
+// document.body.appendChild(table);
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
 // --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
 // - знайти всі елементі, які мають class
+// let allClassElem = document.querySelectorAll('div')
+// console.log(allClassElem)
+// for (const elem of allClassElem) {
+//     console.log(allClassElem)
+// }
+
+
+
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
+// let p = document.getElementsByTagName('p');
+// for (const elem of p) {
+//     elem.innerText = 'bfdjfbdhfb'
+// }
+
+
 // - знайти всі div та змінити ім колір на червоний
+// let div = document.getElementsByTagName('div');
+// for (const elem of div) {
+//     elem.style.color = 'red';
+// }
