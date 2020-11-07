@@ -19,20 +19,24 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
 
-// function lowerNumber(first, second, third){
-//     return Math.min.apply( Math, arguments );
+// function lowerNumber(first, second, third) {
+//     if (first < second && first < third) return first;
+//     if (second < first && second < third) return second;
+//     if (third < second && third < first) return third;
 // }
-// let min = lowerNumber(5, 2, 3)
+//
+// let min = lowerNumber(5, 8, 9)
 // console.log(min)
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
 
 // function upperNumber(first, second, third){
-//     return Math.max.apply( Math, arguments );
+//     if (first > second && first > third) return first;
+//     if (second > first && second > third) return second;
+//     if (third > second && third > first) return third;
 // }
-// let max = upperNumber(5, 2, 3)
+// let max = upperNumber(5, 25, 3)
 // console.log(max)
 
 
@@ -40,12 +44,16 @@
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
 
 // function number() {
-//     console.log('max = ' + Math.max.apply(Math, arguments));
-//     return Math.min.apply(Math, arguments);
+//     let max = 0;
+//     let min = arguments[0]
+//     for (const i of arguments) {if (i > max) max = i;}
+//     console.log(`max = ${max}`)
+//     for (const j of arguments) { if(min > j) min = j; }
+//     return min
 // }
-// let min = number(2, 3, 4, 5, 6);
-// console.log('min = ' + min)
-
+//
+// let min = number(75, 7, 80, 8, 24);
+// console.log(`min = ${min}`)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - створити функцію яка виводить масив
@@ -59,17 +67,27 @@
 // - створити функцію яка повертає найбільше число з масиву
 
 // function maxArr(arr) {
-//     return Math.max.apply(Math, arr)
+//     let upperNumber = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (upperNumber < arr[i]) upperNumber = arr[i];
+//     }
+// return upperNumber;
+//
 // }
-// console.log(maxArr([1, 2, 3, 5, 7]));
+//
+// console.log(maxArr([11, -2, 10, 25, 7]));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - створити функцію яка повертає найменьше число з масиву
 
 // function minArr(arr) {
-//     return Math.min.apply(Math, arr)
+//         let minNumber = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (minNumber > arr[i]) minNumber = arr[i];
+//     }
+// return minNumber;
 // }
-// console.log(minArr([1, 2, 3, 5, 7]));
+// console.log(minArr([5, 2, 3, 5, 7]));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
@@ -248,17 +266,6 @@
 // carsFunc(teslaCars,'cars')
 
 
-
-
-
-
-
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
@@ -379,25 +386,46 @@
 // или слово NO в противном случае.
 // Операцией возведения в степень пользоваться нельзя!
 
-// let N = 16;
-// // console.log(N/2)
+// let N = -4;
 // do {
-//     if (N/1 === 2) {
+//     if (N / 1 === 2) {
 //         console.log('YES')
 //     }
-//     if (N%2 === 0){
-//         N = N/2;
+//     if (N % 2 === 0 && N > 1) {
+//         N = N / 2;
 //     } else {
 //         console.log('No')
 //
 //     }
-// } while (N>=2)
+// } while (N >= 2)
 
+
+// let N = -4;
+// do {
+//     if (N / 1 === 2) {
+//         console.log('YES')
+//     }
+//     if (N % 2 === 0 && N > 1) {
+//         N = N / 2;
+//     } else {
+//         console.log('No')
+//
+//     }
+// } while (N >= 2)
+
+
+// function check(n) {
+//     while (n > 1) {
+//         n /= 2;
+//     }
+//     return n < 1 ? 'NO' : 'YES';
+//
+// }
+//
+// console.log(check(64))
 
 // 2) Deep Copy
 // реалізувати глибоке копіювання обєкту за допомогою рекурсій
-
-
 
 
 // 3) Flat
