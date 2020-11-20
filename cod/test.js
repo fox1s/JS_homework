@@ -107,3 +107,39 @@
 //
 //
 // document.body.appendChild(div)
+
+
+
+// =======================================================================================
+// використовуєтсья чілдрегн в ост строчках коду
+// let form = document.forms.form;
+// let input = form.inputText;
+// let checkbox = form.checkbox;
+// let radio1 = form.radio1;
+// let radio2 = form.radio2;
+// let textarea = form.textarea;
+//
+// revers(form)
+// // input.oninput = (ev) => {
+// //     localStorage.setItem('inputText', ev.target.value)
+// // }
+// function saveForm (tag) {
+//     for (let i = 0; i < tag.length; i++) {
+//         if (tag[i].type === 'checkbox' || tag[i].type === 'radio') {
+//             tag[i].checked
+//                 ? tag[i].value = true
+//                 : tag[i].value = false
+//         }
+//         localStorage.setItem(tag[i].id, tag[i].value);
+//     }
+// }
+//
+// // function revers (tag) {
+// //     for (let i = 0; i < localStorage.length; i++) {
+// //         console.log(tag[i].id)
+// //         if (localStorage.hasOwnProperty(tag.children[i].id)) {
+// //             tag.children[i].value = localStorage.getItem(tag.children[i].id)
+// //         }
+// //         // console.log(tag[i].id)
+// //     }
+// // }
