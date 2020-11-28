@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #btnSave {
+            width: 50px;
+            height: 25px;
+        }
+        /*textarea {*/
+        /*    margin-top: 20px;*/
+        /*}*/
+
+        .centr {
+            display: flex;
+            justify-content: center;
+        }
+        .inputContactBook {
+            margin: 0 5px 0 5px;
+            border: 2px solid pink;
+            width: 200px;
+        }
+
+        #btnBook {
+            border: 2px solid pink;
+            background-color: #ffcfd0;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<!--<textarea name="textarea" id="text" cols="30" rows="10"></textarea>-->
+<!--<form id="form" oninput="saveForm(this)">-->
+<!--    <input type="text" id="inputText">-->
+<!--    <input type="checkbox" id="checkbox" value="false">-->
+<!--    <input type="radio" name="radio" id="radio1" value="false">-->
+<!--    <input type="radio" name="radio" id="radio2" value="false">-->
+<!--    <textarea name="" id="textarea" cols="30" rows="10"></textarea>-->
+
+<!--    <select name="select" id="select">-->
+<!--        <option value="">option 1</option>-->
+<!--        <option value="">option 2</option>-->
+<!--        <option value="">option 3</option>-->
+<!--        <option value="">option 4</option>-->
+<!--        <option value="">option 5</option>-->
+<!--        <option value="">option 6</option>-->
+<!--    </select>-->
+<!--</form>-->
+
+
+
+
+
+<!--<div id="div"></div>-->
+<!--<textarea name="" id="textarea" cols="30" rows="10"></textarea>-->
+<!--<button id="btnSave">save</button>-->
+
+
+
+
+<!--<div class="centr" style="font-weight: bold; font-size: 30px">ЗАПИСНА КНИГА</div>-->
+<!--<br>-->
+<!--<form action="" id="form" class="centr">-->
+<!--    <input type="text" class="inputContactBook" id="fio" placeholder="ФІО">-->
+<!--    <input type="text" class="inputContactBook" id="number" placeholder="Номер телефону">-->
+<!--    <input type="text" class="inputContactBook" id="Email" placeholder="Email">-->
+<!--    <input type="text" class="inputContactBook" id="firm" placeholder="Фірма">-->
+<!--    <input type="text" class="inputContactBook" id="depart" placeholder="Відділ фірми">-->
+<!--    <input type="text" class="inputContactBook" id="birthday" placeholder="Дата народження">-->
+<!--    <button id="btnBook">Додати</button>-->
+<!--</form>-->
+<!--<hr style="border: 2px solid pink; margin-bottom: 20px">-->
+
+<fieldset>
+    <legend>MyForm</legend>
+    <form id="form1">
+        <label>FIO</label>
+        <br>
+        <input type="text" name="fio">
+        <br>
+        <label>Phone</label>
+        <br>
+        <input type="tel" name="phone">
+        <br>
+        <label>mail</label>
+        <br>
+        <input type="text" name="mail">
+        <br>
+        <label>firm</label>
+        <br>
+        <input type="text" name="firm">
+        <br>
+        <label>depart</label>
+        <br>
+        <input type="text" name="depart">
+        <br>
+        <label>birthday</label>
+        <br>
+        <input type="date" name="hb">
+        <br>
+        <input type="submit" name="submit1">
+        <br>
+    </form>
+</fieldset>
+<div id="content"></div>
+
+
+
+<script src="hw_8.js"></script>
+</body>
+</html>
